@@ -3,7 +3,7 @@
 </p>
 
 
-Olá, seja bem vindo ao repositório do projeto Store Manager! Aqui você irá aprender como instalar e testar esse projeto na sua máquina, para desfrutar das mais diversas funções que esse projeto possui. Eu desenvolvi um projeto de API de blogs em Node.js que permite que os usuários publiquem seus próprios posts após fazer login. Para implementar todas as funcionalidades necessárias, utilizei o Sequelize - um poderoso ORM que oferece um CRUD completo.
+Olá, seja bem vindo ao repositório do projeto BlogsAPI! Aqui você irá aprender como instalar e testar esse projeto na sua máquina, para desfrutar das mais diversas funções que esse projeto possui. Eu desenvolvi um projeto de API de blogs em Node.js que permite que os usuários publiquem seus próprios posts após fazer login. Para implementar todas as funcionalidades necessárias, utilizei o Sequelize - um poderoso ORM que oferece um CRUD completo.
 
 Para garantir a segurança do sistema, implementei um sistema de login baseado na biblioteca JWT (JSON Web Token), que emite tokens de acesso para usuários autenticados. O MySQL também foi integrado ao projeto para gerenciar o banco de dados.
 
@@ -29,7 +29,9 @@ Este projeto pode ser executado de duas formas distintas: a primeira exige a ins
 - Rode o serviço `node` e `db` com o comando `ddocker-compose up -d --build`
 
 Lembre-se de parar o `mysql` se estiver usando localmente na porta padrão (`3306`), ou adapte, caso queria fazer uso da aplicação em containers;
+
 Esses serviços irão inicializar um container chamado `blogs_api` e outro chamado `blogs_api_db`;
+
 A partir daqui você pode rodar o container `blogs_api` via CLI ou abri-lo no VS Code.
 
 - Use o comando `docker exec -it blogs_api bash` e sigas passos abaixo.
@@ -46,7 +48,9 @@ Para rodar o projeto desta forma, obrigatoriamente você deve ter o node instala
 ### Configuração :gear:
 
 Depois de instalar as dependências, você vai precisar criar o banco de dados na qual a API vai consumir. Isso é bem simples porque utilizando o sequelize, com apenas um comando, todo o banco é criado o populado.
--Execute o comando `npm run prestart`.
+
+- Execute o comando `npm run prestart`.
+
 Esse é um comando predefinido com scripts do sequelize, caso sinta curiosidade a mais, você pode consultar o `package.json` do projeto.
 
 Observe abaixo o Diagrama de Entidade-Relacionamento do banco que você acabou de criar:
